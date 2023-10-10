@@ -24,7 +24,7 @@ struct CalcButton: View {
                 }
                 else {
                     guard let num = Double(textField) else {
-                        textField = "Dane niepoprawne"
+                        textField = "Niewłaściwe dane"
                         isResult = true
                         return
                     }
@@ -35,7 +35,7 @@ struct CalcButton: View {
             }
             else if (operation == "sin") {
                 guard let var1 = Double (textField) else {
-                    textField = "Dane niepoprawne"
+                    textField = "Niewłaściwe dane"
                     isResult = true
                     return
                 }
@@ -48,7 +48,7 @@ struct CalcButton: View {
                 }
                 let var1 = Double (previousNum)
                 guard let var2 = Double (textField) else {
-                    textField = "Dane niepoprawne"
+                    textField = "Niewłaściwe dane"
                     isResult = true
                     return
                 }

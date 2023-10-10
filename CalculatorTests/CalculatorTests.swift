@@ -9,28 +9,97 @@ import XCTest
 @testable import Calculator
 
 final class CalculatorTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let calc = Calculations()
+    
+    func testPositiveScenarioForAddCalculation() {
+        let var1 = Double(14)
+        let var2 = Double(37)
+        let oper = "+"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertEqual(result, 51.0)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testNegativeScenarioForAddCalculation() {
+        let var1 = Double(2)
+        let var2 = Double(2)
+        let oper = "+"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertNotEqual(result, 5.0)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testPositiveScenarioForSubCalculation() {
+        let var1 = Double(14)
+        let var2 = Double(37)
+        let oper = "-"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertEqual(result, -23.0)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testNegativeScenarioForSubCalculation() {
+        let var1 = Double(2)
+        let var2 = Double(2)
+        let oper = "-"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertNotEqual(result, 1.0)
     }
+    
+    func testPositiveScenarioForProdCalculation() {
+        let var1 = Double(14)
+        let var2 = Double(37)
+        let oper = "*"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertEqual(result, 518.0)
+    }
+    
+    func testNegativeScenarioForProdCalculation() {
+        let var1 = Double(5)
+        let var2 = Double(6)
+        let oper = "*"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertNotEqual(result, 29.0)
+    }
+    
+    func testPositiveScenarioForDivCalculation() {
+        let var1 = Double(12)
+        let var2 = Double(4)
+        let oper = "/"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertEqual(result, 3.0)
+    }
+    
+    func testZeroScenarioForDivCalculation() {
+        let var1 = Double(12)
+        let var2 = Double(0)
+        let oper = "/"
+        
+        let result = calc.calculate(var1: var1, var2: var2, operand: oper)
+        
+        XCTAssertEqual(result, "Próba dzielenia przez 0")
+    }
+    
+    func testPositiveScenarioForSinCalculation() {
+        let var1 = Double.pi/6
+        let var2 = Double(123)
+        let oper = "sin"
+        
+        let result = Double(calc.calculate(var1: var1, var2: var2, operand: oper))
+        
+        XCTAssertEqual(result, sin(Double.pi/6))
+    }
+    
 
 }

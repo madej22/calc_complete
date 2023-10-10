@@ -16,6 +16,7 @@
 		3FEF52C52ACC43DB001B4B0D /* CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF52C42ACC43DB001B4B0D /* CalculatorUITestsLaunchTests.swift */; };
 		3FEF52D82ACC4AAF001B4B0D /* CalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF52D72ACC4AAF001B4B0D /* CalcButton.swift */; };
 		3FF237BD2AD1483200A6538B /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF237BC2AD1483200A6538B /* Calculations.swift */; };
+		3FF75CA12AD57AE200DE6B73 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF75CA02AD57AE200DE6B73 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		3FEF52C42ACC43DB001B4B0D /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3FEF52D72ACC4AAF001B4B0D /* CalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButton.swift; sourceTree = "<group>"; };
 		3FF237BC2AD1483200A6538B /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		3FF75CA02AD57AE200DE6B73 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				3FEF52AD2ACC43DA001B4B0D /* Preview Content */,
 				3FEF52D72ACC4AAF001B4B0D /* CalcButton.swift */,
 				3FF237BC2AD1483200A6538B /* Calculations.swift */,
+				3FF75CA02AD57AE200DE6B73 /* File.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF75CA12AD57AE200DE6B73 /* File.swift in Sources */,
 				3FEF52D82ACC4AAF001B4B0D /* CalcButton.swift in Sources */,
 				3FEF52AA2ACC43DA001B4B0D /* ContentView.swift in Sources */,
 				3FEF52A82ACC43DA001B4B0D /* CalculatorApp.swift in Sources */,
